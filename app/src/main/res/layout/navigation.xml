@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/rounded_navbar"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/home_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/background_navbar">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/home" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/analysis_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/background_navbar">
+
+        <ImageView
+            android:id="@+id/iv_analysis"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/analysis"/>
+
+    </LinearLayout>
+
+    <!-- Tambahan untuk logo Category -->
+    <LinearLayout
+        android:id="@+id/category_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/background_navbar">
+
+        <ImageView
+            android:id="@+id/iv_category"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:src="@drawable/category"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/background_navbar">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/profile"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "669060186860",
+    "project_id": "proyekperangkatlunak-6b78c",
+    "storage_bucket": "proyekperangkatlunak-6b78c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669060186860:android:f289ee636e6bbf08aa5bc9",
+        "android_client_info": {
+          "package_name": "com.example.ppl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGCyJidXJuKaeGKH2B5rky_6H3lOdu5ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.ppl'
+    compileSdk 34
+    packaging {
+        resources {
+            excludes += 'mozilla/public-suffix-list.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    defaultConfig {
+        applicationId "com.example.ppl"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.firebase.database
+    implementation libs.firebase.auth
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.firebase.crashlytics.buildtools
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation libs.mpandroidchart
+
+    // Volley library
+    implementation 'com.android.volley:volley:1.2.1'
+
+    // Image loading libraries
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    // OkHttp library
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
+
+    // Retrofit library
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // Gson library
+    implementation 'com.google.code.gson:gson:2.8.8'
+
+    // HTTP Client library
+    implementation 'org.apache.httpcomponents.client5:httpclient5:5.2'
+
+
+    // Conscrypt for better security on older devices
+    implementation 'org.conscrypt:conscrypt-android:2.5.1'
+
+    // Firebase Crashlytics
+    implementation ('com.google.firebase:firebase-crashlytics-buildtools:3.0.2') {
+        // Exclude older HttpClient dependency to avoid conflicts
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
+}

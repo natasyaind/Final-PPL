@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminHomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#D9544F">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Hi, Welcome Back!"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.160" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/line"
+                android:layout_marginTop="-10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+                app:layout_constraintVertical_bias="0.073" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_top_background"
+            android:padding="32dp"
+            android:layout_marginTop="-20dp">
+
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="330dp"
+                android:layout_height="68dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.235"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tv_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="MENU"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_menu"
+                app:layout_constraintEnd_toEndOf="@+id/iv_menu"
+                app:layout_constraintStart_toStartOf="@+id/iv_menu"
+                app:layout_constraintTop_toTopOf="@+id/iv_menu" />
+
+            <ImageView
+                android:id="@+id/belanja"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:padding="10dp"
+                android:src="@drawable/belanja"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_menu"
+                app:layout_constraintVertical_bias="0.066" />
+
+            <TextView
+                android:id="@+id/tv_belanja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belanja"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/belanja"
+                app:layout_constraintStart_toStartOf="@id/belanja"
+                app:layout_constraintTop_toBottomOf="@+id/belanja"
+                app:layout_constraintVertical_bias="0.017" />
+
+            <ImageView
+                android:id="@+id/pajak"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:padding="10dp"
+                android:src="@drawable/tax"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_menu"
+                app:layout_constraintVertical_bias="0.066" />
+
+            <TextView
+                android:id="@+id/tv_pajak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pajak"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/pajak"
+                app:layout_constraintStart_toStartOf="@id/pajak"
+                app:layout_constraintTop_toBottomOf="@+id/pajak"
+                app:layout_constraintVertical_bias="0.017" />
+
+            <ImageView
+                android:id="@+id/fakultas"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:padding="10dp"
+                android:src="@drawable/fakultas"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_menu"
+                app:layout_constraintVertical_bias="0.066" />
+
+            <TextView
+                android:id="@+id/tv_fakultas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fakultas"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/fakultas"
+                app:layout_constraintStart_toStartOf="@id/fakultas"
+                app:layout_constraintTop_toBottomOf="@+id/fakultas"
+                app:layout_constraintVertical_bias="0.017" />
+
+            <ImageView
+                android:id="@+id/rka"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:padding="10dp"
+                android:src="@drawable/anggaran"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/belanja"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="@id/belanja"
+                app:layout_constraintTop_toBottomOf="@+id/belanja"
+                app:layout_constraintVertical_bias="0.120" />
+
+            <TextView
+                android:id="@+id/tv_rka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggaran\n(RKA)"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/rka"
+                app:layout_constraintStart_toStartOf="@id/rka"
+                app:layout_constraintTop_toBottomOf="@+id/rka"
+                app:layout_constraintVertical_bias="0.017" />
+
+            <ImageView
+                android:id="@+id/tahunan"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:padding="10dp"
+                android:src="@drawable/at"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/pajak"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="@id/pajak"
+                app:layout_constraintTop_toBottomOf="@+id/pajak"
+                app:layout_constraintVertical_bias="0.120" />
+
+            <TextView
+                android:id="@+id/tv_tahunan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggaran\nTahunan"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tahunan"
+                app:layout_constraintStart_toStartOf="@id/tahunan"
+                app:layout_constraintTop_toBottomOf="@+id/tahunan"
+                app:layout_constraintVertical_bias="0.017" />
+
+            <ImageView
+                android:id="@+id/rencana"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:padding="10dp"
+                android:src="@drawable/rk"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/fakultas"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="@id/fakultas"
+                app:layout_constraintTop_toBottomOf="@+id/fakultas"
+                app:layout_constraintVertical_bias="0.120" />
+
+            <TextView
+                android:id="@+id/tv_rencana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rencana\nKerja"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/rencana"
+                app:layout_constraintStart_toStartOf="@id/rencana"
+                app:layout_constraintTop_toBottomOf="@+id/rencana"
+                app:layout_constraintVertical_bias="0.017" />
+
+            <ImageView
+                android:id="@+id/rekap"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:padding="10dp"
+                android:src="@drawable/rlk"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tahunan"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="@id/tahunan"
+                app:layout_constraintTop_toBottomOf="@+id/tahunan"
+                app:layout_constraintVertical_bias="0.190" />
+
+            <TextView
+                android:id="@+id/tv_rekap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rekap Keuangan"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/rekap"
+                app:layout_constraintStart_toStartOf="@id/rekap"
+                app:layout_constraintTop_toBottomOf="@+id/rekap"
+                app:layout_constraintVertical_bias="0.017" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

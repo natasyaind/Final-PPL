@@ -1,0 +1,5 @@
+<!-- res/drawable/nav_item_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/selectedBackground" android:state_selected="true"/> <!-- Aktif -->
+    <item android:drawable="@android:color/transparent"/> <!-- Tidak aktif -->
+</selector>
